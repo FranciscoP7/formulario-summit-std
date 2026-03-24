@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SINODAL TECH DAY 2026 — Inscrição</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="orb2"></div>
+  <div class="scanline"></div>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">SINODAL TECH DAY 2026</div>
+      <div class="badge">PRADO TECH // 2026</div>
+    </header>
+
+    <aside class="side-info">
+      <div>
+        <div class="event-label">// Summit de Tecnologia</div>
+        <h1 class="event-title">Maior evento de tecnologia<br>de <strong>Gravataí</strong></h1>
+      </div>
+    
+      <divider class="divider"></divider>
+      
+    </aside>
+
+    <main class="form-card">
+      <div class="form-heading">// Inscrição</div>
+      <h2 class="form-title">Garantir minha vaga</h2>
+
+      <div class="form-fields">
+        <div class="field">
+          <label for="nome">Nome completo <span class="req">*</span></label>
+          <input type="text" id="nome" placeholder="Seu nome completo" autocomplete="name" />
+          <div class="field-error" id="nome-err">Campo obrigatório.</div>
+        </div>
+
+        <div class="field">
+          <label for="email">Gmail <span class="req">*</span></label>
+          <input type="email" id="email" placeholder="seunome@gmail.com" autocomplete="email" />
+          <div class="field-error" id="email-err">Insira um Gmail válido.</div>
+        </div>
+
+        <div class="field">
+          <label for="tel">Telefone <span class="req">*</span></label>
+          <input type="tel" id="tel" placeholder="(00) 00000-0000" autocomplete="tel" maxlength="15" />
+          <div class="field-error" id="tel-err">Telefone inválido.</div>
+        </div>
+
+        <div class="field">
+          <label for="nasc">Data de nascimento <span class="req">*</span></label>
+          <input type="date" id="nasc" />
+          <div class="field-error" id="nasc-err">Data inválida.</div>
+        </div>
+
+        <label class="check-field" id="check-wrapper" for="terms">
+          <div class="check-box" id="checkBox"></div>
+          <input type="checkbox" id="terms" style="display:none" />
+          <span class="check-text">
+            Li e concordo com os <a href="#" onclick="return false">Termos de Participação</a>
+            e a <a href="#" onclick="return false">Política de Privacidade</a> do SINODAL TECH DAY 2026.
+          </span>
+        </label>
+        <div class="check-error" id="terms-err">Você precisa aceitar os termos para continuar.</div>
+
+        <button class="btn-submit" id="submitBtn" type="button">
+          <span>Confirmar Inscrição →</span>
+        </button>
+      </div>
+
+      <div class="success-state" id="successState">
+        <div class="success-icon">✓</div>
+        <div class="success-title">// Inscrição confirmada</div>
+        <p class="success-msg">Bem-vindo ao SINODAL TECH 2026! Você receberá todas as informações no e-mail cadastrado em breve.</p>
+        <div class="success-code" id="successCode">ID: -</div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 SINODAL TECH DAY</p>
+      <p>Made by Francisco Pereira and Matheus Souza</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
